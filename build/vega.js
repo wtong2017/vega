@@ -58,7 +58,7 @@
   	"vega-transforms": "~4.9.3",
   	"vega-typings": "~0.19.2",
   	"vega-util": "~1.16.0",
-  	"vega-view": "~5.9.2",
+  	"vega-view": "git+https://github.com/wtong2017/vega-view.git",
   	"vega-view-transforms": "~4.5.8",
   	"vega-voronoi": "~4.1.5",
   	"vega-wordcloud": "~4.1.3"
@@ -39662,6 +39662,9 @@
       p = point$5(e, el);
       p[0] -= translate[0];
       p[1] -= translate[1];
+    } else {
+      translate = offset$2(view);
+      p = [event["clientX"] - translate[0], event["clientY"] - translate[1]];
     }
 
     event.dataflow = view;

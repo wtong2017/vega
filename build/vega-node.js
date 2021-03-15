@@ -115,7 +115,7 @@ var dependencies = {
 	"vega-transforms": "~4.9.3",
 	"vega-typings": "~0.19.2",
 	"vega-util": "~1.16.0",
-	"vega-view": "~5.9.2",
+	"vega-view": "git+https://github.com/wtong2017/vega-view.git",
 	"vega-view-transforms": "~4.5.8",
 	"vega-voronoi": "~4.1.5",
 	"vega-wordcloud": "~4.1.3"
